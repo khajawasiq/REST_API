@@ -1,0 +1,18 @@
+# POST http://localhost:8003/register
+# Content-Type: application/json
+
+
+# {
+#     "name": "adnan_khaja",
+#     "email": "adnan211@gmail.com",
+#     "age": "21",
+#     "work": "job",
+#     "desc":"hello mongoDB",
+#     "mobile": "819912"
+# }
+
+# GET http://localhost:8003/getAllUser
+# Content-Type: application/json
+
+ DELETE   http://localhost:8003/user/deleteUser/64a1e74b3cd4e374f699deba
+Content-Type: application/json
