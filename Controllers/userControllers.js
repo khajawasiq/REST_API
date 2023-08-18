@@ -32,6 +32,7 @@ exports.userpost = async (req, res) => {
     console.log("catch block error  ");
   }
 };
+
 // get  all users
 exports.getUsers = async (req, res) => {
   try {

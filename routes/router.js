@@ -1,17 +1,24 @@
 const express = require("express");
 const router = express.Router();
 const users = require("../models/usersSchema");
-const controllers = require('../Controllers/userControllers');
+const controllers = require("../Controllers/userControllers");
+const studentControllers = require("../Controllers/studentControllers");
 
 // router.get("/",(req,res)=>{
 //     console.log("connect");
 // });
 
-router.post("/user/register",controllers.userpost);
-router.get("/user/getAlluser",controllers.getUsers);
-router.get("/user/singleUser/:id",controllers.getSingleUser);
-router.delete("/user/deleteUser/:id",controllers.deleteUser);
-router.put("/user/updateUser/:id",controllers.updateUser);
+router.post("/user/register", controllers.userpost);
+router.get("/user/getAlluser", controllers.getUsers);
+router.get("/user/singleUser/:id", controllers.getSingleUser);
+router.delete("/user/deleteUser/:id", controllers.deleteUser);
+router.put("/user/updateUser/:id", controllers.updateUser);
+
+// student routes
+
+router.post("/student/register", studentControllers.studentpost);
+router.get("/student/getAllstudents", studentControllers.getStudents);
+router.get("/student/singleStudent/:id", studentControllers.getSingleStudent);
 
 // router.post("/register", async (req, res) => {
 //   // console.log(req.body);
